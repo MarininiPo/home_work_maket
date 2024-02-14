@@ -1,22 +1,22 @@
 * {
 bottom: 0;
-margin: 0;
+margin: 0 auto;
 }
 
 body {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     background-color: white;
-    width: 1319px;
-    height: 928px;
+    max-width: 1319px;
     margin: 0 auto;
 }
 
 header {
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    width: 1174px;
+    max-width: 1174px;
+    justify-content: space-between;
 }
 
 header .logo__header img {
@@ -41,14 +41,21 @@ header .navigation__header .home {
 main {
     margin-top: 84px;
     display: flex;
-    gap: 73px;
-    width: 1174px;
+    flex-wrap: wrap;
+    gap: 98px;
+    max-width: 1170px;
+    
+}
+
+main .text__main .text__main__title {
+    max-Width: 522px;
 }
 
 main .text__main h1 {
     font-weight: 700;
     font-size: 60px;
     color: #000000;
+    
 }
 
 main .text__main p {
@@ -56,6 +63,7 @@ main .text__main p {
     font-size: 20px;
     color: #888888;
     margin-top: 20px;
+    
 }
 
 main .text__main .button__main {
@@ -85,14 +93,12 @@ main .text__main .button__main p {
 }
 
 main .img__main img {
-    width: 545px;
-    height: 375px;
-    min-height: 375;
-    min-width: 545px;
+    max-width: 610.73px;
+    max-height: 372.9px;
 }
 
 footer {
-    width: 1174px;
+    max-width: 1174px;
     margin-top: 200px;
     
 }
@@ -100,6 +106,6 @@ footer {
 footer .img__footer {
 height: 50px;
 display: flex;
-    justify-content: space-between;
-    align-items: center;
+flex-wrap: wrap;
+gap: 48px;
 }
